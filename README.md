@@ -19,6 +19,7 @@ Well, I'm no JavaScript developer, but this *ought* to do the trick:
 
 ```
 git clone https://github.com/mickesv/JSPonies.git
+cd JSPonies
 npm install
 npm start
 ```
