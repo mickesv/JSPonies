@@ -32,6 +32,8 @@ JSPonies is available under an [MIT](LICENSE) license.
 # Configuration
 There's not much to configure, but what there is, is in `Config.js`:
 
+| Config Option | Description |
+| --- | --- |
 | PonyWindowConfig | an object with additional options to the Electron BrowserWindow.
 |                 | Defaults to { alwaysOnTop: true, }
 |PonySpeakProbability | Probability (from 0 to 1) that a Pony wants to say something.
