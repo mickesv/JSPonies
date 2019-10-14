@@ -1,0 +1,22 @@
+{
+    "name": "jsponies",
+    "version": "1.0.0",
+    "description": "JPonies, but in JS.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "PONIES"
+    ],
+    "author": "Mikael Svahnberg",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^6.0.10"
+    },
+    "dependencies": {
+        "gifwrap": "^0.9.2",
+        "jimp": "^0.8.4"
+    }
+}

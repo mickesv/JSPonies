@@ -1,0 +1,38 @@
+
+body {
+    background: #606060;
+    color: white;
+}
+
+.Pony {
+    background: #202020;    
+    border: 1px solid #808080;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.PonyName {
+    max-width: 100px;
+    max-height: 50px;
+    color: #C0C0C0;
+    font-size: 120%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    pointer-events: none;
+}
+
+.PonyImage {
+    max-width: 100px;
+    max-height: 100px;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    pointer-events: none;    
+}

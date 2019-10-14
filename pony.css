@@ -1,0 +1,54 @@
+
+body {
+}
+
+.PonyImage {
+    max-width: 75% /*150px;*/
+    max-height: 50% /*100px;*/
+    vertical-align: bottom;
+    bottom: 10px;
+    left: 10px;
+}
+
+.speechBubble {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    alignSelf: center;
+    margin: 20px 0px 20px 0px;    
+}
+
+/* SpeechBubble text */
+.speechBubble .speechBubbleText {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    border-radius: 6px;
+    font-size: x-small;
+
+    /* Position the text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /*  left: 50%;
+  margin-left: -60px; */
+
+    /* Fade in  */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* SpeechBubble arrow */
+.speechBubble .speechBubbleText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
