@@ -12,6 +12,8 @@ I think I managed. And if you think I failed, then take a moment and contemplate
 
 Anyway, so here it is. There are a few outstanding TODOs yet (notably I have not done anything about Effects and Interactions yet), but you can now bask in all the glory of Ponies all over your desktop *and your Touch Bar* if you use a thusly equipped Mac.
 
+![Screenshot](./Screenshot.png)
+
 # Installation
 Well, I'm no JavaScript developer, but this *ought* to do the trick:
 
