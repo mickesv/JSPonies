@@ -18,7 +18,7 @@ Well, I'm no JavaScript developer, but this *ought* to do the trick:
 ```
 git clone https://github.com/mickesv/JSPonies.git
 npm install
-npm run
+npm start
 ```
 
 # License
@@ -32,11 +32,11 @@ JSPonies is available under an [MIT](LICENSE) license.
 # Configuration
 There's not much to configure, but what there is, is in `Config.js`:
 
-PonyWindowConfig | an object with additional options to the Electron BrowserWindow.
-                 | Defaults to { alwaysOnTop: true, }
-PonySpeakProbability | Probability (from 0 to 1) that a Pony wants to say something.
-                     | Default: 0.005;
-SpeakDuration        | Milliseconds that a speech bubble will be visible.
-                     | Default: 4000 ms
-DefaultStable        | An array of ponies to start with
-DefaultTouchBarPony  | A string with the name of a pony to graze on the Touch Bar
+| PonyWindowConfig | an object with additional options to the Electron BrowserWindow.
+|                 | Defaults to { alwaysOnTop: true, }
+|PonySpeakProbability | Probability (from 0 to 1) that a Pony wants to say something.
+|                     | Default: 0.005;
+|SpeakDuration        | Milliseconds that a speech bubble will be visible.
+|                     | Default: 4000 ms
+|DefaultStable        | An array of ponies to start with
+|DefaultTouchBarPony  | A string with the name of a pony to graze on the Touch Bar
