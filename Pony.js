@@ -46,7 +46,12 @@ class Pony {
 
     getRandomSpeak() {
         let rand = Math.floor(Math.random() * this.data.speak.length);
-        return this.data.speak[rand].text;
+        let speak = this.data.speak[rand];
+        if (speak) {
+            return speak.text;
+        } else {
+            return null;
+        }        
     };
 
     getSpeak(speakName) {
