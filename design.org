@@ -1,0 +1,89 @@
+* Class Diagram
+#+BEGIN_SRC plantuml :file JSPony-Class.png
+Package GUI {
+
+class PonyWindow {
+ +name;
+ +clearTimers()
+ +hidePony()
+ +teleport()
+ +selectNewBehaviour()
+ +movePony()
+ +maybeSpeak()
+ +speak()
+}
+
+class TouchBarPony {
+ +clearTimers()
+ +selectNewBehaviour()
+ +setPosition()
+ +movePony()
+ +setImage()
+ +getCurrentFrameData()
+ +updateImage()
+ +UpdateButton()
+}
+
+TouchBarPony -- "1" Ponies::Pony
+PonyWindow -- "1" Ponies::Pony
+
+Package ClientSide {
+class "Pony.html" as pht
+PonyWindow - "1" pht
+pht -- "1" PonyRenderer
+}
+
+}
+
+Package Ponies {
+class PonyContainer
+class Pony {
+ +clone()
+ +name
+ +data
+ +staticImage
+ +isVisible
+ +behaviour
+ +currentImage
+ +loadPony()
+ +readPonyInit()
+ +toggle()
+ +getRandomSpeak()
+ +getSpeak()
+ +getBehaviourByName()
+ +getRandomBehaviour()
+ +getLinkedBehaviour()
+ +selectNextBehaviour()
+}
+
+PonyContainer - "*" Pony
+
+Pony -- "*" PonyBehaviour
+Pony -- "*" PonySpeak
+Pony -- "*" PonyEffect
+
+class PonyBehaviour {
+ +data
+ +movement
+ +facing
+ +name
+ +linked
+ +speed
+ +speakLines()
+ +image()
+ +onlyVerticalMovement()
+ +setMovement()
+ +setRandomFacing()
+ +setRandomMovement()
+ +maybeSetDestionationMovement()
+ +reduceAllowedMoves()
+ +maybeParseLinkedBehaviour()
+ +maybeParseFollow() 
+}
+}
+
+
+#+END_SRC
+
+#+RESULTS:
+[[file:JSPony-Class.png]]
