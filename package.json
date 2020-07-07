@@ -13,7 +13,7 @@
     "author": "Mikael Svahnberg",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^6.0.10"
+        "electron": "^9.1.0"
     },
     "dependencies": {
         "gifwrap": "^0.9.2",
